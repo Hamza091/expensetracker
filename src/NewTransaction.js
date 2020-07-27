@@ -28,6 +28,8 @@ function NewTransaction() {
         {console.log(amount)
             calculateExpense({amount})
         }
+       setText("")
+       setAmount("")
            
     }
     return (
