@@ -30,12 +30,26 @@ export const  GlobalProvider=({children})=>{
         setTotal((parseFloat(trans.amount)+parseFloat(total)).toFixed(2))
         setBalance(balance+parseFloat(trans.amount))
     }
-    const deleteTransaction=(id)=>
+    const updateStates=(amount)=>
+    {
+        if(amount>0)
+        {
+            setTotal(total-amount)
+            setBalance(balance-amount)
+        }
+        else if(amount<0)
+        {
+            setExTotal(extotal-amount)
+            setBalance(balance-amount)
+        }
+    }
+    const deleteTransaction=({id,text,amount})=>
     {
         dispatch({
             type:"DELETE_TRANSACTION",
             payload: id
         })
+        updateStates(amount)
     }
     const calculateExpense= (trans) =>
     {

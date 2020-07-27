@@ -8,7 +8,7 @@ function Balance() {
     return (
         <div className="current-balance">
             YOUR BALANCE<br />
-            <span>${balance.toFixed(2)}</span>
+            <span>${balance.toFixed(4)}</span>
         </div>
     )
 }

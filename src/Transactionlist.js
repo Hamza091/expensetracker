@@ -8,7 +8,7 @@ function Transactionlist({id,text , amount}) {
     const {deleteTransaction} = useContext(trans)
    const deleteList = ()=>
    {
-       deleteTransaction(id)
+       deleteTransaction({id,text,amount})
       
        
    } 
