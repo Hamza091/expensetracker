@@ -3,7 +3,7 @@ import Reducer from './Reducer.js'
 
 
 const initialState=[
-     {id:2,text:"bag",amount:100}, {id:1,text:"shoes",amount:300}
+    // {id:2,text:"bag",amount:100}, {id:1,text:"shoes",amount:300}
 ]
 const income=0.00.toFixed(2)
 const expense=0.00.toFixed(2)
@@ -30,6 +30,13 @@ export const  GlobalProvider=({children})=>{
         setTotal((parseFloat(trans.amount)+parseFloat(total)).toFixed(2))
         setBalance(balance+parseFloat(trans.amount))
     }
+    const deleteTransaction=(id)=>
+    {
+        dispatch({
+            type:"DELETE_TRANSACTION",
+            payload: id
+        })
+    }
     const calculateExpense= (trans) =>
     {
         
@@ -45,7 +52,8 @@ export const  GlobalProvider=({children})=>{
              total,
              extotal,
              balance,
-             calculateExpense    
+             calculateExpense,
+             deleteTransaction
         }
     }>
         

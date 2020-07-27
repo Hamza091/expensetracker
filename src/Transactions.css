@@ -40,5 +40,11 @@
 {
     all: unset; 
     float: right;    
-
+}
+.Cross
+{
+    all: unset;
+   margin-left: 20px;
+   font-weight: bolder;
+   color: red;
 }
