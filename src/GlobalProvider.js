@@ -3,7 +3,7 @@ import Reducer from './Reducer.js'
 
 
 const initialState=[
-    // {id:2,text:"bag",amount:100}, {id:1,text:"shoes",amount:300}
+     {id:2,text:"bag",amount:100}, {id:1,text:"shoes",amount:300}
 ]
 const income=0.00.toFixed(2)
 const expense=0.00.toFixed(2)
