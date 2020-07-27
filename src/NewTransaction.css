@@ -1,0 +1,73 @@
+.Transaction-body
+{
+ 
+    width: 400px;
+    position: relative;
+    left: 50px;
+    bottom: 25px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+    /* border: 2px solid red; */
+        
+}
+h2
+{
+    font-weight: 700;
+    border-bottom: 1px solid #bbb;
+    width: 250px;
+    margin-left: 25px;
+    padding: 5px;
+    
+}
+.text-label
+{
+    /* border: 1px solid green; */
+    position: relative;
+    padding: 2px;
+    margin-left: 20px;
+    bottom: 10px;
+}
+.text-input
+{
+    padding: 7px;
+    padding-right: 90px;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px;
+    margin-bottom: 10px;
+}
+.amount-label
+{
+    /* border: 1px solid orange; */
+    margin-left: 20px;
+    
+}
+.number-input
+{
+    padding: 7px;
+    padding-right: 90px;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px;
+    margin-top: 10px;
+    
+}
+.Transaction-button
+{
+    margin-top:20px;
+    width: 270px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(185, 27, 185);
+    color: white;
+    border: none;
+    margin-left:15px;
+    font-weight: 700;
+    font-size: 15px;
+    
+}
+.info
+{
+    all: unset;
+    margin-left: 21px;
+}

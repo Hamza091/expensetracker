@@ -1,0 +1,44 @@
+.Transactions>h4
+{
+    border-bottom: 1px solid #bbb;
+    width: 240px;
+    /* border: 2px solid red; */
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    position: relative;
+    left: 100px;
+    bottom: 45px;
+}
+.list-items
+{
+    /* border:2px solid red; */
+    position: relative;
+    bottom: 55px;
+    margin-left: 80px;
+    width: 250px;   
+}
+.income
+{
+    list-style: none;
+    margin-bottom: 7px;
+    margin-left: -13px;
+    font-size: 17px;
+    color: green;
+    font-weight: 600;
+}
+.expense
+{
+    list-style: none;
+    margin-bottom: 7px;
+    margin-left: -13px;
+    font-size: 17px;
+    color:red;
+    font-weight: 600;
+}
+.amountt
+{
+    all: unset; 
+    float: right;    
+
+}
