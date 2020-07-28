@@ -13,7 +13,7 @@ function NewTransaction() {
   
     const callTransaction=()=>
     {
-        if(text!=""&&amount!="")
+        if(text!=""&&amount!=""&&amount!=0)
         {
         const id = Math.floor(Math.random()*1000)+2
       
@@ -29,7 +29,9 @@ function NewTransaction() {
         else if(parseFloat(amount)<0)
         {console.log(amount)
             calculateExpense({amount})
-        }}
+        }
+        }
+        
     
        setText("")
        setAmount("")
