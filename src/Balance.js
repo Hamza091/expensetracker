@@ -1,6 +1,5 @@
 import React,{useContext} from 'react'
 import './Expense.css';
-import GlobalProvider from './GlobalProvider.js';
 import {trans} from './GlobalProvider'
 
 function Balance() {
@@ -8,7 +7,7 @@ function Balance() {
     return (
         <div className="current-balance">
             YOUR BALANCE<br />
-            <span>${balance.toFixed(4)}</span>
+            <span>${balance.toFixed(2)}</span>
         </div>
     )
 }

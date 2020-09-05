@@ -15,9 +15,9 @@ function NewTransaction() {
     {
         if(text!=""&&amount!=""&&amount!=0)
         {
-        const id = Math.floor(Math.random()*1000)+2
+        const uniqueId = Math.floor(Math.random()*1000)+2
       
-        addTransaction({id,text,amount})
+        addTransaction({uniqueId,text,amount})
         // calculateIncome(amount)
 
         console.log(typeof(parseFloat(amount)))

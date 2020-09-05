@@ -14,8 +14,9 @@ function Transactions() {
         <div className="Transactions">
             <h4>History </h4>
              <ul className="list-items">
-               { transactions.map((list)=>(<Transactionlist key={list.id} id={list.id} text={list.text} amount={list.amount}/>))}
+               { transactions.map((list)=>(<Transactionlist  uniqueId={list.uniqueId} text={list.text} amount={list.amount}/>))}
                
+
             </ul>
         </div>
     )
